@@ -1,0 +1,31 @@
+.social-network ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-network a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  outline: rgba(45, 56, 63, 0.3) solid 1px;
+  outline-offset: -1px;
+
+  @include hover-focus {
+    outline: $color-dark-slate-gray solid 1px;
+  }
+
+  @include active {
+    background-color: $color-royal-blue;
+    outline: none;
+
+    & use {
+      fill: $color-default-white;
+    }
+  }
+}

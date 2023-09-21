@@ -1,0 +1,74 @@
+.main {
+  position: relative;
+}
+
+.main__background-1-container {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    top: -95px;
+  }
+
+  @include vp-767 {
+    top: 137px;
+  }
+}
+
+.main__background-1-container img {
+  @include vp-1199 {
+    width: 294px;
+    height: 1364px;
+  }
+
+  @include vp-767 {
+    width: 176px;
+    height: 595px;
+  }
+}
+
+.main__background-2-container {
+  position: absolute;
+  top: 2495px;
+  left: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.main__background-3-container {
+  position: absolute;
+  top: 2679px;
+  right: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.main__background-4-container {
+  position: absolute;
+  top: 501px;
+  left: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.main__background-5-container {
+  position: absolute;
+  top: 1552px;
+  right: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    display: none;
+  }
+}

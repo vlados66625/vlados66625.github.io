@@ -1,0 +1,49 @@
+.button-swiper {
+  display: flex;
+  gap: 4px;
+}
+
+.button-swiper__button {
+  cursor: pointer;
+  position: relative;
+  width: 37px;
+  height: 35px;
+  background-color: $color-royal-blue;
+  padding: 0;
+  border: none;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  @include hover-focus {
+    outline: 1px solid $color-resolution-blue;
+    outline-offset: -1px;
+    background-color: $color-default-white;
+
+    & .button-swiper__button-icon use {
+      fill: $color-resolution-blue;
+    }
+  }
+
+  @include active {
+    outline: none;
+    background-color: $color-resolution-blue;
+
+    & .button-swiper__button-icon use {
+      fill: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    background: rgba(2, 102, 193, 0.1);
+    pointer-events: none;
+  }
+}
+
+.button-swiper__button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

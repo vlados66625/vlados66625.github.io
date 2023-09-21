@@ -1,0 +1,98 @@
+.upcoming-tours__swiper {
+  margin-bottom: 52px;
+
+  @include vp-1199 {
+    width: 98.23%;
+    max-width: 820px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 29px;
+  }
+}
+
+.upcoming-tours__container {
+  padding: 123px 0 60px 0;
+
+  @include vp-1199 {
+    padding: 83px 0 60px 0;
+  }
+
+  @include vp-767 {
+    padding: 69px 0 60px 0;
+  }
+}
+
+.upcoming-tours__swiper-slide {
+  height: auto;
+}
+
+.upcoming-tours__card {
+  height: 100%;
+}
+
+.upcoming-tours__title-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+
+  @include vp-1199 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
+}
+
+.upcoming-tours__title {
+  @include vp-1199 {
+    margin-top: 5px;
+  }
+
+  @include vp-767 {
+    margin-top: -2px;
+  }
+}
+
+.upcoming-tours__all-tours-link {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-royal-blue;
+  }
+}
+
+.upcoming-tours__all-tours-icon {
+  margin-left: 7px;
+  vertical-align: -1px;
+
+  @include vp-767 {
+    margin-left: 5px;
+  }
+}
+
+.upcoming-tours__all-tours-icon use {
+  color: inherit;
+}

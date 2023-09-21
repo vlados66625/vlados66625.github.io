@@ -1,0 +1,58 @@
+.container {
+  min-width: $vp-320;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5.86%;
+
+  @include vp-767 {
+    padding: 0 4.69%;
+    box-sizing: border-box;
+  }
+
+  &--header-top {
+    position: relative;
+  }
+
+  &--navigation {
+    padding: 0;
+
+    @include vp-1199 {
+      padding: 0 5.86%;
+    }
+
+    @include vp-767 {
+      padding: 0 4.69%;
+    }
+  }
+
+  &--advantages {
+    max-width: none;
+    padding: 0;
+
+    @include vp-1199 {
+      padding: 0 5.86%;
+    }
+
+    @include vp-767 {
+      padding: 0 4.69%;
+      box-sizing: border-box;
+    }
+  }
+
+  &--reviews {
+    padding-right: 0;
+    box-sizing: border-box;
+    padding-left: min(79px, 5.86%);
+    max-width: 1359px;
+
+    @include vp-767 {
+      padding: 0 4.69%;
+    }
+  }
+
+  &--main-footer {
+    @include vp-767 {
+      padding: 0 6.25%;
+    }
+  }
+}
