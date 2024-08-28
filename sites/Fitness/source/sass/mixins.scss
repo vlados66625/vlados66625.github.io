@@ -1,0 +1,57 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+}
+
+@mixin focus {
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &:not(.class):not(.claas1):not(.class2) {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active:not(.class):not(.class2):not(.class3) {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
+// Desktop first
+
+@mixin vp-1199 {
+  @media (max-width: ($vp-1200 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}

@@ -1,0 +1,60 @@
+.social-network ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1199 {
+    max-width: 135px;
+  }
+}
+
+.social-network li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  @include focus {
+    outline: none;
+  }
+}
+
+.social-network a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  background-color: $color-default-white;
+
+  @include hover-focus {
+    background-color: $color-egyptian-blue;
+    outline: none;
+
+    & use {
+      fill: $color-default-white;
+    }
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+
+    & use {
+      fill: $color-default-white;
+    }
+  }
+}
+
+.social-network .disabled {
+  background-color: #030a1a;
+}
+
+.social-network a use {
+  fill: $color-black-russian;
+}

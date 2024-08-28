@@ -1,0 +1,264 @@
+.advantages {
+  background-color: #f8f9fc;
+}
+
+.advantages__wrapper {
+  padding: 102px 0 123px;
+
+  @include vp-1199 {
+    padding: 85px 0 94px;
+  }
+
+  @include vp-767 {
+    padding: 8px 0 63px;
+  }
+}
+
+.advantages__wrapper h2 {
+  margin-bottom: 45px;
+  text-align: center;
+
+  @include vp-1199 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 44px;
+  }
+}
+
+.advantages__container ul {
+  display: grid;
+  grid-template-columns: 321px 240px 340px;
+  column-gap: 60px;
+  row-gap: 40px;
+  margin: 0;
+  padding: 0 0 0 19px;
+  list-style-type: none;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 678px;
+    margin: 0 auto;
+    padding: 0;
+    column-gap: 28px;
+    row-gap: 37px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: auto;
+    width: auto;
+    justify-items: center;
+    row-gap: 33px;
+    align-items: start;
+  }
+}
+
+.advantages__container li:not(:first-of-type) {
+  display: flex;
+
+  column-gap: 30px;
+  min-height: 142px;
+
+  @include vp-1199 {
+    align-items: center;
+    min-height: 80px;
+  }
+
+  @include vp-767 {
+    align-items: start;
+    flex-direction: column;
+    justify-items: center;
+    padding: 0 46px;
+  }
+}
+
+.advantages__container li:nth-of-type(2),
+.advantages__container li:nth-of-type(3) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    height: 2px;
+    width: 340px;
+    background-color: rgba(209, 10, 66, 0.2);
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
+.advantages__container li:nth-of-type(2) {
+  position: relative;
+
+  &::before {
+    left: -19px;
+  }
+}
+
+.advantages__container li:nth-of-type(4),
+.advantages__container li:nth-of-type(5) {
+  align-self: end;
+  align-items: end;
+
+  @include vp-767 {
+    align-self: start;
+    align-items: start;
+  }
+}
+
+.advantages__container strong {
+  margin: 0;
+  font-size: 71px;
+  line-height: 100%;
+  font-weight: 700;
+  background: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
+  background-clip: text;
+  color: transparent;
+
+  @include vp-1199 {
+    font-size: 58px;
+  }
+}
+
+.advantages__container span {
+  grid-area: 2/1/3/2;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-neon-blue;
+  line-height: 11px;
+
+  @include vp-767 {
+    align-self: center;
+  }
+}
+
+.advantages__container li div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+
+  @include vp-1199 {
+    row-gap: 2px;
+  }
+}
+
+.advantages__container h3 {
+  margin: 8px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 20px;
+  }
+
+  @include vp-767 {
+    align-self: center;
+    margin: 15px 0 0;
+  }
+}
+
+.advantages__container li:not(:first-of-type) p:first-child {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: start;
+  padding-bottom: 8px;
+
+  @include vp-1199 {
+    margin-top: 5px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 0;
+    align-self: center;
+    margin: 0;
+  }
+}
+
+.advantages__container li:nth-of-type(4) p:first-child,
+.advantages__container li:nth-of-type(5) p:first-child {
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.advantages__container li p:last-of-type {
+  grid-area: 2/2/3/3;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.advantages__container li:first-of-type {
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: start;
+  margin-top: 10px;
+  background-color: #1c3374;
+  padding: 53px 34px 58px;
+
+  @include vp-1199 {
+    grid-area: 2 / 1 / 4 / 3;
+    margin-top: 5px;
+    width: 65%;
+    justify-self: center;
+    padding: 32px 116px 38px;
+  }
+
+  @include vp-767 {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 100%;
+    padding: 37px 61px 43px;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.advantages__container li:first-of-type h3 {
+  font-size: 26px;
+  color: $color-default-white;
+  text-align: center;
+  margin: 0 0 33px;
+
+  @include vp-1199 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 11px;
+  }
+}
+
+.advantages__container li:first-of-type p {
+  font-size: 16px;
+  color: $color-default-white;
+  text-align: center;
+}
+
+.advantages__container li:first-of-type strong {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 74px;
+  color: $color-default-white;
+  text-align: center;
+
+  @include vp-1199 {
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    line-height: 100%;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  min-width: $vp-320;
+  max-width: $vp-1200;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 4.69%;
+  }
+
+  &--abonnements {
+    @include vp-1199 {
+      padding: 0 163px;
+    }
+
+    @include vp-767 {
+      padding: 0 15px;
+    }
+  }
+
+  &--trainer {
+    padding: 0;
+    max-width: 1200px;
+
+    @media (max-width: 1366px) {
+      max-width: 88%;
+    }
+
+    @include vp-1199 {
+      padding: 0 86px;
+      max-width: 100%;
+    }
+
+    @include vp-767 {
+      padding: 0 32px;
+    }
+  }
+
+  &--advantages {
+    padding: 0 80px;
+
+    @include vp-1199 {
+      padding: 0 45px;
+    }
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &--reviews {
+    @include vp-1199 {
+      padding: 0 25px;
+    }
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+}

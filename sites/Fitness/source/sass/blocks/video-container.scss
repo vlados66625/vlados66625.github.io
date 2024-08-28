@@ -1,0 +1,82 @@
+.video-container {
+  display: inline-block;
+  position: relative;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1199 {
+    display: block;
+    width: 39.23%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.video-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.video-container__button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  user-select: none;
+}
+
+.video-container__button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 50%;
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.video-container__button-icon {
+  @include hover-focus {
+    & .video-container__button-icon-stroke {
+      stroke: $color-sapphire;
+    }
+
+    & .video-container__button-icon-circle {
+      fill: $color-default-white;
+    }
+
+    & .video-container__button-icon-triangle {
+      fill: $color-sapphire;
+    }
+  }
+}
+
+.video-container__button[disabled] {
+  & .video-container__button-icon {
+    opacity: 0.4;
+  }
+
+  & .video-container__button-icon-stroke {
+    stroke: $color-sapphire;
+  }
+
+  & .video-container__button-icon-circle {
+    fill: $color-default-white;
+  }
+
+  & .video-container__button-icon-triangle {
+    fill: $color-sapphire;
+  }
+}
