@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акселератор: Фитнес 2.0 - Техническое задание</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <div class="page-fitness">
+        <header class="page-fitness__header">
+            <h1 class="page-fitness__title">Fitness - Техническое задание</h1>
+        </header>
+
+        <main class="page-fitness__main">
+            <section class="section section--requirements">
+                <h2 class="section__title">Общие технические требования</h2>
+                <ol class="section__list">
+                    <li class="section__list-item">Стандарты вёрстки: HTML5, CSS3, прогрессивное улучшение.</li>
+                    <li class="section__list-item">
+                        Адаптивность сетки: мобильная, планшетная и десктопная версии.<strong>Desktop First.</strong> На
+                        всех промежуточных разрешениях используется резиновая вёрстка.
+                    </li>
+                    <li class="section__list-item">Используемая методология: БЭМ.</li>
+                    <li class="section__list-item">Используемые фреймворки: нет..</li>
+                    <li class="section__list-item">Препроцессор: Sass (SCSS).</li>
+                    <li class="section__list-item">
+                        Используемый инструмент автоматизации: Gulp.
+
+                    </li>
+                    <li class="section__list-item">Кроссбраузерность: Chrome, Firefox, Safari.</li>
+                    <li class="section__list-item">
+                        Графика не предоставляется, её необходимо вырезать самостоятельно.
+                    </li>
+                    <li class="section__list-item">
+                        Нестандартные шрифты подключены локально.
+                    </li>
+                    <li class="section__list-item">JavaScript: минимальная реализация, модальные окна, переключения и
+                        так далее.</li>
+                    <li class="section__list-item">Папка <code class="section__code">build</code> должна попадать в
+                        репозиторий и находится в основной ветке проекта — это необходимо для проведения оперативного
+                        тестирования. При тестировании происходит автоматическая подгрузка репозитория из главной ветки.
+                    </li>
+                    <li class="section__list-item">Верстка должна соответствовать критериям качества</li>
+                </ol>
+            </section>
+
+            <section class="section section--client-requirements">
+                <h2 class="section__title">Требования заказчика</h2>
+                <ol class="section__list">
+                    <li class="section__list-item">
+                        <strong>Брейкпоинты:</strong> <br>мобильная версия — 320px - 767px,<br> планшетная — 768px -
+                        1199px,
+                        <br>десктопная — от 1200
+                        px и выше.
+                    </li>
+                    <li class="section__list-item">
+                        При клике на кнопку<code class="section__code"> Купить абонемент</code> происходит скролл
+                        страницы
+                        до
+                        раздела Абонементы.
+                    </li>
+                    <li class="section__list-item">Раздел <strong>Тренажерный зал</strong><br>
+                        <ul class="section__list section__list--nested">
+                            <li class="section__list-item">
+                                Десктоп версия: два абзаца текста; в мобильной и планшетной — один.
+                            </li>
+                            <li class="section__list-item">Стилизовать обложку видео и кнопку <code
+                                    class="section__code">play</code>.</li>
+                            <li class="section__list-item">
+                                При клике на <code class="section__code">play</code> запускается видео.
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="section__list-item">Раздел <strong>Абонементы</strong>:<br>
+                        <ul class="section__list section__list--nested">
+                            <li class="section__list-item">Это вкладки (табы). Подробные требования к реализации в
+                                Базовом техническом задании. </li>
+                            <li class="section__list-item">Блоки с абонементами при наведении меняют своё состояние. См.
+                                стайлгайд.</li>
+                            <li class="section__list-item">Кнопка «Купить абонемент» ведёт на страницу-заглушку.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        Промо блок <strong>Super Games</strong>: кнопка <code>Заполнить заявку</code> ведёт на страницу
+                        — заглушку,
+                        потенциальную страницу, которой нет в макете.
+                    </li>
+                    <li class="section__list-item">Блок <strong>Тренеры</strong>:<br>
+                        <ul class="section__list section__list--nested">
+                            <li class="section__list-item">Слайдер прокручивается бесконечно, минимум восемь
+                                слайдов.
+                            </li>
+                            <li class="section__list-item">
+                                Информация о тренере отображается при наведении (десктоп) или клике (мобильная,
+                                планшетная).
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        Блок <strong>Акции</strong>: кнопка <code>Подробнее</code> ведёт на страницу-заглушку.
+                    </li>
+                    <li class="section__list-item">Блок <strong>FAQ</strong>:<br>
+                        <ul class="section__list section__list--nested">
+                            <li class="section__list-item">Аккордеон с анимацией плавного выпадения и скрытия.</li>
+                            <li class="section__list-item">Категории вопросов: Центр, Абонемент, Услуги, Правила.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        Блок <strong>Отзывы</strong>: слайдер с минимум двумя слайдами, кнопка «Назад» блокирована в
+                        начальной позиции, «Вперёд» в финальной.
+                    </li>
+                    <li class="section__list-item">
+                        Форма <strong>Бесплатное Занятие</strong><br>
+                        <ul class="section__list section__list--nested">
+                            <li class="section__list-item">Контент полей формы должен проходить валидацию.
+                            </li>
+                            <li class="section__list-item">
+                                Поля формы должны очищаться после её отправки.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">Загрузить проект на GitHub Pages перед тестированием.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
