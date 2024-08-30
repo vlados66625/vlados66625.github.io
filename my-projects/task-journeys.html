@@ -47,12 +47,129 @@
                         тестирования. При тестировании происходит автоматическая подгрузка репозитория из главной ветки.
                     </li>
                     <li class="section__list-item">Верстка должна соответствовать критериям качества</li>
+                </ol>
+            </section>
+            <section class="section section--client-requirements">
+                <h2 class="section__title">Требования заказчика</h2>
+                <ol class="section__list">
                     <li class="section__list-item">
-                        Брейкпоинты: <br>мобильная версия — 320px - 767px,<br> планшетная — 768px -
-                        1199px,
-                        <br>десктопная — от 1200
-                        px и выше.
+                        <strong>Брейкпоинты:</strong>
+                        <ul class="section__list">
+                            <li class="section__list-item">мобильная версия — 320px - 767px</li>
+                            <li class="section__list-item">планшетная версия — 768px - 1199px</li>
+                            <li class="section__list-item">десктопная версия — от 1200 px и выше</li>
+                        </ul>
                     </li>
+                    <li class="section__list-item">
+                        <strong>Шапка</strong>
+                        <ul class="section__list">
+                            <li class="section__list-item">Элементы меню являются якорными ссылками.</li>
+                            <li class="section__list-item">Телефон — это кликабельная ссылка. При клике на номер
+                                телефона появляется возможность совершить звонок.</li>
+                            <li class="section__list-item">Клик на логотип ведёт на Главную страницу.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Hero Section</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Это слайдер. Не прокручивается самостоятельно. Управление
+                                только через кнопки управления и по свайпу на мобильных устройствах. Зацикленный, но не
+                                листается автоматически, только кликами по кнопкам. При прокручивании активная точка
+                                пагинации смещается вправо. Листается со скоростью 300ms.</li>
+                            <li class="section__list-item">Основные требования к слайдеру прописаны в базовом
+                                техническом задании.</li>
+                            <li class="section__list-item">Кнопка <code class="section__code">Смотреть тур</code> ведёт на несуществующую страницу. В
+                                адресе ссылки кнопки можно поставить #.</li>
+                            <li class="section__list-item">Видео по умолчанию не проигрывается. Для старта нужно
+                                кликнуть на кнопку <code class="section__code">play</code>.</li>
+                            <li class="section__list-item">Обложку видео и кнопку <code class="section__code">play</code> необходимо стилизовать в
+                                соответствии с макетом.</li>
+                            <li class="section__list-item">При клике на <code class="section__code">play</code> запускается видео.</li>
+                            <li class="section__list-item">Аудио по умолчанию не проигрывается. Для старта нужно
+                                кликнуть на кнопку <code class="section__code">play</code>.</li>
+                            <li class="section__list-item">Для плеера достаточно реализовать идентичный по размеру
+                                фрейма блок.</li>
+                            <li class="section__list-item">При клике на <code class="section__code">play</code> запускается первый выпуск подкаста.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Блок Ближайшие туры</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Слайдер. Не прокручивается самостоятельно. Управление
+                                слайдера только через кнопки управления и по свайпу на мобильных устройствах. Основные
+                                требования к слайдеру прописаны в базовом техническом задании.</li>
+                            <li class="section__list-item">Слайдер прокручивается до последнего слайда.</li>
+                            <li class="section__list-item">Клик по ссылке <code class="section__code">показать все туры</code> ведёт на несуществующую
+                                страницу. В адресе ссылки кнопки можно поставить #.</li>
+                            <li class="section__list-item">Карточки можно переиспользовать для реализации десктопной
+                                версии для хотя бы одного пролистывания слайдера.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Блок Обучение</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Слайдер. Не прокручивается самостоятельно. Управление только
+                                через кнопки управления и по свайпу на мобильных устройствах. Основные требования к
+                                слайдеру прописаны в Базовом техническом задании.</li>
+                            <li class="section__list-item">Слайдер прокручивается до последнего слайда.</li>
+                            <li class="section__list-item">Иконка <code class="section__code">соцсети инструктора</code> кликабельна. Ведёт на
+                                несуществующую страницу. В адресе ссылки кнопки можно поставить #.</li>
+                            <li class="section__list-item">Карточки можно переиспользовать для реализации десктопной
+                                версии для хотя бы одного пролистывания слайдера.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Блок Отзывы и Фотогалерея</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Слайдер. Не прокручивается самостоятельно. Управление только
+                                через кнопки управления и по свайпу на мобильных устройствах. Основные требования к
+                                слайдеру прописаны в базовом техническом задании.</li>
+                            <li class="section__list-item">Слайдер прокручивается до последнего слайда.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Блок Преимущества</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Это зацикленный слайдер. Управление слайдера только через
+                                кнопки управления и по свайпу на мобильных устройствах. Основные требования к слайдеру
+                                прописаны в базовом техническом задании.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Форма обратной связи</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Контент полей формы должен проходить валидацию.</li>
+                            <li class="section__list-item">Поля формы должны очищаться после её отправки.</li>
+                            <li class="section__list-item">Отправка формы возможна только после заполнения всех полей.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Блок Контакты</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Телефон и почта — это кликабельные ссылки. При клике на номер
+                                телефона появляется возможность совершить звонок, при клике на почту — открывается почта
+                                с возможностью написать письмо.</li>
+                            <li class="section__list-item">Карта не скроллится. Увеличивается и уменьшается через
+                                элементы управления самой подключаемой карты. Маркер установлен на адресе. Карта
+                                подключается с помощью библиотеки Leaflet.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Футер</strong>
+                        <ul class="section__list ">
+                            <li class="section__list-item">Элементы меню являются якорными ссылками.</li>
+                            <li class="section__list-item">Иконки соцсетей ведут на соцсети компании. В адресе ссылки
+                                можно поставить #.</li>
+                            <li class="section__list-item">Телефон — это <code class="section__code">кликабельная ссылка</code>. При клике на номер
+                                телефона появляется возможность совершить звонок.</li>
+                            <li class="section__list-item">Клик на логотип ведёт на Главную страницу.</li>
+                        </ul>
+                    </li>
+                    <li class="section__list-item">
+                        <strong>Загрузить проект на GitHub Pages перед тестированием</strong>
+                    </li>
+
                 </ol>
             </section>
         </main>
