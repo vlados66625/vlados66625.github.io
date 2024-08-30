@@ -17,7 +17,7 @@
   max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .container__title {
@@ -184,7 +184,7 @@
   }
 
   .page__container {
-    padding: 10px 0;
+    padding: 10px 20px;
   }
 
   .container__grid {
