@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Акселератор: Фитнес 2.0 - Техническое задание</title>
+    <title>Fitness - Техническое задание</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
@@ -86,12 +86,15 @@
                                 Базовом техническом задании. </li>
                             <li class="section__list-item">Блоки с абонементами при наведении меняют своё состояние. См.
                                 стайлгайд.</li>
-                            <li class="section__list-item">Кнопка «Купить абонемент» ведёт на страницу-заглушку.
+                            <li class="section__list-item">Кнопка <code
+                                    class="section__code">Купить абонемент</code>Купить абонемент ведёт на
+                                страницу-заглушку.
                             </li>
                         </ul>
                     </li>
                     <li class="section__list-item">
-                        Промо блок <strong>Super Games</strong>: кнопка <code>Заполнить заявку</code> ведёт на страницу
+                        Промо блок <strong>Super Games</strong>: кнопка <code
+                            class="section__code">Заполнить заявку</code> ведёт на страницу
                         — заглушку,
                         потенциальную страницу, которой нет в макете.
                     </li>
@@ -111,14 +114,30 @@
                     </li>
                     <li class="section__list-item">Блок <strong>FAQ</strong>:<br>
                         <ul class="section__list section__list--nested">
-                            <li class="section__list-item">Аккордеон с анимацией плавного выпадения и скрытия.</li>
-                            <li class="section__list-item">Категории вопросов: Центр, Абонемент, Услуги, Правила.
+                            <li class="section__list-item">Данный блок таб в каждой вкладке которого аккордеон. По
+                                умолчанию все вкладки аккордеона должны быть скрыты, выбран первый таб блока «центр».
+                            </li>
+                            <li class="section__list-item">Категории групп вопросов и ответов: Центр, Абонемент, Услуги,
+                                Правила.
+                            </li>
+                            <li class="section__list-item">У выпадающих элементов при раскрытии ответа на вопрос через
+                                <code class="section__code">+</code>
+                                и скрытии его через <code class="section__code">-</code> проигрывается анимация плавного
+                                выпадения.
+                            </li>
+                            <li class="section__list-item">При выборе категории происходит плавное появление вопросов
+                                категории.
+                            </li>
+                            <li class="section__list-item">Пользователь сам раскрывает выпадающий элемент и сам же его
+                                закрывает. Одновременно пользователем могут быть открыты все элементы.
                             </li>
                         </ul>
                     </li>
                     <li class="section__list-item">
-                        Блок <strong>Отзывы</strong>: слайдер с минимум двумя слайдами, кнопка «Назад» блокирована в
-                        начальной позиции, «Вперёд» в финальной.
+                        Блок <strong>Отзывы</strong>: слайдер с минимум двумя слайдами, кнопка <code
+                            class="section__code">Назад</code> блокирована в
+                        начальной позиции, <code class="section__code">Вперёд</code> в финальной. Слайдер «отзывы» не
+                        зациклен, то есть после перехода к последнему элементу дальше переключиться нельзя.
                     </li>
                     <li class="section__list-item">
                         Форма <strong>Бесплатное Занятие</strong><br>

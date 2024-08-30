@@ -14,9 +14,10 @@
 .page__container {
   text-align: center;
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 85vh;
   overflow-y: auto;
-  padding: 20px;
+  overflow-x: hidden;
+  padding: 40px 0;
 }
 
 .container__title {
@@ -75,6 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .card__icon {
@@ -136,7 +138,7 @@
 }
 
 .card__back--farm-products {
-  background: linear-gradient(180deg, #ffd65c, #e23e57);
+  background: linear-gradient(180deg, #fbc217, #e23e57);
 }
 
 .card__links {
@@ -145,6 +147,7 @@
   grid-gap: 10px;
   width: 100%;
   padding: 20px;
+  user-select: none;
 }
 
 .links__item {
@@ -175,14 +178,10 @@
   .card__title {
     font-size: 1.2em;
   }
-
-  .card__links {
-    grid-template-columns: 1fr;
-  }
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   margin: 0;
@@ -198,7 +197,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Заголовки */
 .page-fitness__header {
   text-align: center;
   margin-bottom: 30px;
@@ -210,7 +208,6 @@ body {
   color: #333;
 }
 
-/* Основные секции */
 .section {
   margin-bottom: 30px;
 }
@@ -245,12 +242,16 @@ body {
 }
 
 .section__code {
-  background: #f7f7f7;
-  padding: 2px 4px;
+  background: #d0d0d0;
+  padding: 4px 4px;
   border-radius: 4px;
 }
 
 .section__list--nested {
   list-style-type: circle;
   padding-left: 20px;
+}
+
+.section__list--no-style {
+  list-style-type: none;
 }
