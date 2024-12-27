@@ -141,6 +141,10 @@
   background: linear-gradient(180deg, #fbc217, #e23e57);
 }
 
+.card__back--big-trip {
+  background: linear-gradient(180deg, #adc700, #01ba2c);
+}
+
 .card__links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -247,6 +251,10 @@ body {
 
 .section__list {
   padding-left: 20px;
+}
+
+ul.section__list {
+  list-style-type: none;
 }
 
 .section__list-item {
