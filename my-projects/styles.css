@@ -85,6 +85,11 @@
   height: 40px;
 }
 
+.card__icon--six-cities {
+  height: 28px;
+  width: 56px;
+}
+
 .card__icon img {
   width: 100%;
   height: auto;
@@ -143,6 +148,10 @@
 
 .card__back--big-trip {
   background: linear-gradient(180deg, #adc700, #01ba2c);
+}
+
+.card__back--six-cities {
+  background: #004cc79e;
 }
 
 .card__links {
