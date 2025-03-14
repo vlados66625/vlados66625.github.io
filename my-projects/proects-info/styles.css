@@ -38,6 +38,7 @@
 
 .page__header-container {
   position: relative;
+  padding: 0 110px;
 }
 
 .page__back-button {
@@ -71,16 +72,26 @@
     padding: 15px;
   }
 
-  .page__header {
-    margin-bottom: 10px;
-  }
-
   .page__container {
     padding: 10px 20px;
   }
 
+  .page__header-container {
+    padding: 0 80px;
+  }
+
+  .page__header {
+    margin-bottom: 10px;
+  }
+
   .page__title {
     font-size: 1.4em;
+  }
+
+  .page__back-button {
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
   }
 
   .page__description {
