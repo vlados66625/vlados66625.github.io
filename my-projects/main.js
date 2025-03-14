@@ -1,7 +1,7 @@
 const cards = document.querySelector('.cards');
 const page = document.querySelector('.page');
 
-cards.addEventListener('click', (evt) => {
+cards.addEventListener('touchend', (evt) => {
     evt.stopPropagation();
     const flippedCard = document.querySelector('.card__inner--flipped');
     if (flippedCard) {
@@ -11,7 +11,7 @@ cards.addEventListener('click', (evt) => {
     cardInner.classList.add('card__inner--flipped');
 });
 
-page.addEventListener('click', () => {
+page.addEventListener('touchend', () => {
     const flippedCard = document.querySelector('.card__inner--flipped');
     if (flippedCard) {
         flippedCard.classList.remove('card__inner--flipped');
