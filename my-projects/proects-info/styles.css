@@ -36,6 +36,29 @@
   color: #333;
 }
 
+.page__header-container {
+  position: relative;
+}
+
+.page__back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 22px;
+  color: #333;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.page__back-button:hover {
+  background-color: rgba(128, 128, 128, 0.513);
+  color: black;
+}
+
 .page__description {
   font-size: 1.2em;
   margin: 0;
