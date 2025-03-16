@@ -184,8 +184,12 @@
 }
 
 @media (max-width: 600px) {
+  .cards__item:hover .card__inner {
+    transform: none;
+  }
+
   .card__inner--flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) !important;
   }
 
   .container__title {
